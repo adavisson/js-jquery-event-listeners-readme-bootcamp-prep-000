@@ -6,11 +6,16 @@ function getIt(){
   });
 }
 
+function frameIt(){
+  $('img').on('load', function(){
+    this.append('class="tasty"');
+  });
+}
 
 $(document).ready(function(){
 
   // call functions here
   getIt();
-
+  frameIt();
 
 });
