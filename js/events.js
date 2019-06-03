@@ -1,13 +1,13 @@
 //define functions here
 
 function getIt(){
-  $('p').on('click', function(){
+  $('p').on('click', function(e){
     alert('Hey!');
   });
 }
 
 function frameIt(){
-  $('img').on('load', function(){
+  $('img').on('load', function(e){
     $('img').addClass("tasty");
   });
 }
@@ -17,6 +17,12 @@ function pressIt(){
     if(key.which == 71){
       alert("You have pressed the 'G' key.");
     }
+  });
+}
+
+function submitIt(){
+  $('form').on('submit', function(){
+    alert(`Your form is going to be submitted now.`);
   });
 }
 
